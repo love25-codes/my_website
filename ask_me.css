@@ -1,0 +1,103 @@
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background: url(https://media.istockphoto.com/vectors/abstract-background-vector-id637569418?k=20&m=637569418&s=612x612&w=0&h=RFymhWhQvz2RrNsOFv9El6R6V9RUV58Ofi1jIya6XdM=);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+
+        .container {
+            box-shadow: 4px 4px 9px white;
+            background: linear-gradient(270deg, rgb(7, 7, 7), rgb(67, 67, 67));
+            width: 390px;
+            height: 650px;
+            margin: auto;
+            margin-top: 60px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            border-radius: 10px;
+        }
+
+        .contact {
+            height: 105px;
+            color: white;
+            font-weight: bolder;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 47px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background: linear-gradient(270deg, #0a85f8, #0bfff7, #8204ff);
+            background-clip: text;
+            color: transparent;
+        }
+
+        .name,
+        .email,
+        .sub,
+        .msg {
+            margin-left: 45px;
+            width: 150px;
+            height: 51px;
+            color: white;
+            font-size: 20px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(30deg, #0882f5, #16fdf5, #9732fd);
+            background-clip: text;
+            color: transparent;
+        }
+
+        .name_text,
+        .email_text,
+        .sub_text,
+        .msg_text {
+            width: 295px;
+            height: 45px;
+            display: block;
+            margin-left: 45px;
+            border-radius: 5px;
+            padding: 10px;
+            font-size: 15px;
+            border: none;
+        }
+
+        .msg_text {
+            padding: 5px;
+            height: 120px;
+        }
+
+        .submit {
+            display: block;
+            width: 115px;
+            height: 35px;
+            margin: auto;
+            border-radius: 7px;
+            font-size: 17px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background-color: rgb(17, 207, 241);
+            transition: all 0.3s ease;
+        }
+
+        .submit:hover {
+            cursor: pointer;
+            background-color: #2e92f0;
+            border: 2px solid white;
+        }
+
+        .name_text:focus,
+        .email_text:focus,
+        .sub_text:focus,
+        .msg_text:focus {
+            outline: none;
+            box-shadow: 0 0 7px 3px rgb(0, 166, 255);
+        }
+   
