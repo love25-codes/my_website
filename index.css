@@ -1,0 +1,1415 @@
+
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      overflow-y: scroll;
+      scrollbar-width: none;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: black;
+    }
+
+    nav {
+      border: 2px solid black;
+      height: 80px;
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+      background-color: #0D0D0D;
+      padding: 9px;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .main_box {
+      margin-top: 80px;
+      min-height: calc(100vh - 80px);
+      background: url(https://t3.ftcdn.net/jpg/02/81/32/74/360_F_281327452_9kx8VPu7pU7RlBPq1gksLbERV0XLWKJV.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+
+    }
+
+    .box1 {
+      color: rgb(199, 198, 198);
+      display: flex;
+      align-items: center;
+      font-size: 38px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+    }
+
+    .box2 {
+
+      width: 500px;
+      padding: 5px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .box3 {
+      border: 1px solid white;
+      width: 150px;
+
+    }
+
+    .box2_1,
+    .box2_2,
+    .box2_3,
+    .box2_4 {
+      /* border: 1px solid white; */
+      width: 110px;
+      height: 45px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+    }
+
+    .box2_1:hover,
+    .box2_2:hover,
+    .box2_3:hover,
+    .box2_4:hover {
+      transform: scale(1.05);
+      transition: transform 0.2s ease;
+      border: 2px solid white;
+      box-shadow: 0 0 9px 1px white;
+
+
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .navboxes:hover {
+      color: rgb(0, 204, 255);
+    }
+
+    .folio {
+      background: linear-gradient(90deg, #0b579e, #00dfd8, #7928ca);
+      background-clip: text;
+      color: transparent;
+    }
+
+    .box3 {
+      position: relative;
+      /* right: 60px; */
+      top: 6px;
+      height: 45px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+      background-color: rgb(235, 231, 231);
+      border: 2px solid black;
+
+    }
+
+    .box3:hover {
+      border: 3px solid white;
+      box-shadow: 0 0 8px 1px white;
+    }
+
+    .contact {
+      color: black;
+      font-weight: bold;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    .container {
+      width: 550px;
+      height: 720px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+    }
+
+    .pic {
+      border: 3px solid white;
+      width: 200px;
+      height: 200px;
+      position: absolute;
+      top: 50px;
+      border-radius: 50%;
+      background: url(pic.jpg);
+      background-repeat: no-repeat;
+      background-size: 200px;
+    }
+
+    .pic:hover {
+      cursor: pointer;
+      transform: scale(1.06);
+      transition: transform 0.2s ease;
+      box-shadow: 0 0 12px 2px white;
+    }
+
+    .hello {
+      width: 200px;
+      height: 75px;
+      position: absolute;
+      top: 260px;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 32px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      background: linear-gradient(90deg, #0b579e, #00dfd8, #7928ca);
+      background-clip: text;
+      color: transparent;
+    }
+
+    .love {
+      /* border: 2px solid white; */
+      width: 360px;
+      height: 79px;
+      position: relative;
+      top: 304px;
+      left: 2px;
+      color: rgb(255, 255, 255);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 43px;
+    }
+
+    .intro {
+      /* border: 2px solid white; */
+      position: relative;
+      line-height: 21px;
+      top: 305px;
+      width: 280px;
+      height: 130px;
+      color: white;
+      font-size: 14px;
+      text-align: center;
+      font-family: Verdana, Tahoma, sans-serif;
+    }
+
+    .intro_button {
+      width: 500px;
+      height: 75px;
+      position: relative;
+      top: 250px;
+      color: white;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 13px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      letter-spacing: 1px;
+    }
+
+    .curious {
+      background: linear-gradient(90deg, #0b579e, #00dfd8, #7928ca);
+      background-clip: text;
+      color: transparent;
+    }
+
+    .button1 {
+      border: 2px solid white;
+      width: 100px;
+      height: 35px;
+      padding: 3px;
+      position: relative;
+      top: 250px;
+      right: 80px;
+      background-color: white;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+      border-radius: 7px;
+      font-size: 17px;
+      font-weight: 600;
+    }
+
+    .button1:hover {
+      cursor: pointer;
+      background-color: rgb(202, 200, 200);
+    }
+
+    .button2 {
+      border: 2px solid white;
+      width: 165px;
+      padding: 3px;
+      height: 35px;
+      border-radius: 7px;
+      position: relative;
+      top: 215px;
+      left: 60px;
+      font-size: 17px;
+      font-weight: 600;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+      color: white;
+      transition: 0.3s ease;
+
+    }
+
+    .button2:hover {
+      cursor: pointer;
+      background-color: white;
+      color: black;
+    }
+
+    .about {
+      height: 100vh;
+      display: flex;
+      position: relative;
+      background: url(black_backdrop.jpg);
+      background-position: center;
+      background-size: cover;
+    }
+
+    .picture-wrapper {
+      position: absolute;
+      left: 870px;
+      top: 130px;
+      width: 430px;
+      height: 550px;
+
+    }
+
+    .picture-wrapper::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(180deg, #1176d4, #06f5ed, rgb(13, 172, 103), #7e0eee);
+      animation: rotate 2s linear infinite alternate;
+      border-radius: 12px;
+      z-index: 0;
+    }
+
+    @keyframes rotate {
+      0% {
+        background-position: 0 0;
+      }
+
+      100% {
+        background-position: 1000px 1000px;
+      }
+
+    }
+
+    .picture {
+      width: 420px;
+      height: 540px;
+      background: url(better.jpg);
+      background-position: center;
+      background-size: cover;
+      border-radius: 9px;
+      position: relative;
+      left: 5px;
+      top: 5px;
+      z-index: 1;
+
+    }
+
+    .aboutme {
+      position: absolute;
+      width: 250px;
+      height: 70px;
+      left: 405px;
+      top: 119px;
+      background: linear-gradient(180deg, #0977df, #06f6ee, #7928ca);
+      background-clip: text;
+      color: transparent;
+      font-size: 42px;
+      text-align: center;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      animation: reveal 2s linear infinite alternate;
+
+    }
+
+    @keyframes reveal {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+
+    }
+
+    .skills {
+      position: absolute;
+      width: 250px;
+      height: 65px;
+      left: 400px;
+      top: 480px;
+      background: linear-gradient(180deg, #0977df, #06f6ee, #7928ca);
+      background-clip: text;
+      color: transparent;
+      font-size: 42px;
+      text-align: center;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      animation: reveal 2s linear infinite alternate;
+
+    }
+
+    .about_intro {
+      position: absolute;
+      width: 565px;
+      height: 300px;
+      top: 195px;
+      left: 280px;
+      color: white;
+      font-size: 20px;
+      text-align: left;
+      line-height: 29px;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    .skill_1,
+    .skill_2,
+    .skill_3,
+    .skill_4,
+    .skill_5 {
+      position: absolute;
+      top: 550px;
+      left: 430px;
+      width: 90px;
+      height: 50px;
+      color: white;
+      font-size: 20px;
+      /* text-align: center; */
+      line-height: 29px;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    }
+
+    .skill_2 {
+      top: 590px;
+    }
+
+    .skill_3 {
+      top: 630px;
+    }
+
+    .skill_4 {
+      left: 580px;
+      top: 560px;
+    }
+
+    .skill_5 {
+      left: 580px;
+      top: 600px;
+    }
+
+    .projects {
+
+      height: 100vh;
+      position: relative;
+      background: url(black_backdrop2.jpg);
+      background-position: center;
+      background-size: cover;
+      background-blend-mode: multiply;
+
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    }
+
+    .projecthead {
+      position: absolute;
+      width: 250px;
+      height: 70px;
+      left: 230px;
+      top: 80px;
+      background: linear-gradient(180deg, #0977df, #06f6ee, #7928ca);
+      background-clip: text;
+      color: transparent;
+      font-size: 40px;
+      text-align: center;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      animation: reveal 2s linear infinite alternate;
+
+
+    }
+
+    .project_container {
+      position: absolute;
+      top: 135px;
+      width: 1200px;
+      left: 200px;
+      height: 680px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+
+    .project_1,
+    .project_2,
+    .project_3 {
+      /* border: 2px solid white; */
+      position: relative;
+      left: 80px;
+      width: 1000px;
+      height: 210px;
+      border-radius: 20px;
+      display: flex;
+      background-color: black;
+      box-shadow: 3px 3px 10px white;
+    }
+
+    .project_1:hover,
+    .project_2:hover,
+    .project_3:hover {
+      cursor: pointer;
+      transform: scale(1.05);
+      transition: transform 0.2s ease;
+      border: 2px solid white;
+
+    }
+
+
+    .project_1vid,
+    .project_2vid,
+    .project_3vid {
+      width: 300px;
+      border-radius: 20px;
+    }
+
+    .project_2cont,
+    .project_3cont {
+      width: 660px;
+      margin-left: 9px;
+      padding: 15px;
+      font-size: 18px;
+      line-height: 29px;
+      color: white;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .project_1cont {
+      width: 660px;
+      margin-left: 9px;
+      padding: 15px;
+      font-size: 18px;
+      line-height: 29px;
+      color: white;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .pinterest,
+    .hover_clock,
+    .solar {
+      color: rgb(1, 255, 225);
+      font-size: 35px;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      font-weight: bold;
+    }
+
+    .hover_clock {
+      color: #2093ff;
+    }
+
+    .solar {
+      color: #fc3cc6;
+    }
+
+    .link {
+
+      color: rgb(106, 106, 255);
+    }
+
+    .link:hover {
+      text-decoration: underline;
+    }
+
+    .achievements {
+      position: relative;
+      height: 100vh;
+
+    }
+
+    .achieve {
+      position: absolute;
+      width: 250px;
+      height: 70px;
+      left: 200px;
+      top: 80px;
+      background: linear-gradient(180deg, #0977df, #06f6ee, #7928ca);
+      background-clip: text;
+      color: transparent;
+      font-size: 40px;
+      text-align: center;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      animation: reveal 2s linear infinite alternate;
+    }
+
+    .achieve_box1,
+    .achieve_box2 {
+      /* border: 2px solid white; */
+      position: relative;
+      height: 270px;
+      width: 1200px;
+      top: 140px;
+      left: 200px;
+      display: flex;
+      border-radius: 8px;
+      background: url(https://www.hdwallpapers.in/download/black_waves_4k_hd_black-1600x900.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+
+    .achieve_box2 {
+      margin-top: 35px;
+    }
+
+    .principal {
+      position: absolute;
+      width: 260px;
+      height: 100%;
+      background: url(principal.png);
+      background-position: center;
+      background-size: cover;
+    }
+
+    .complete {
+      position: absolute;
+      width: 260px;
+      height: 100%;
+      right: 0;
+      background: url(certificate.jpg);
+      background-position: center;
+      background-size: 220px;
+      background-repeat: no-repeat;
+    }
+
+    .achieve_cont1,
+    .achieve_cont2 {
+      /* border: 2px solid blue; */
+      position: absolute;
+      height: 100%;
+      left: 258px;
+      width: 937px;
+      border-bottom-right-radius: 8px;
+      border-top-right-radius: 8px;
+      color: white;
+      padding: 20px;
+      font-size: 20px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .achieve_cont2 {
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+
+    .achieve_box1:hover,
+    .achieve_box2:hover {
+      cursor: pointer;
+      box-shadow: 0 0 12px 5px white;
+    }
+
+    .aca {
+      color: rgb(250, 189, 35);
+      font-size: 27px;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      font-weight: bold;
+    }
+
+    .space {
+      display: block;
+      margin-top: 12px;
+    }
+
+    .footer_container {
+      /* border: 2px solid white; */
+      height: 500px;
+      background-color: rgba(129, 128, 128, 0.925);
+      overflow: hidden;
+      position: relative;
+    }
+
+    .foot_about,
+    .contact_about,
+    .info_about,
+    .help_about,
+    .sub_about {
+      /* border: 2px solid white; */
+      width: 360px;
+      height: 150px;
+      position: absolute;
+      left: 100px;
+      top: 40px;
+      padding: 12px;
+      font-size: 19px;
+    }
+
+    .contact_about {
+      top: 200px;
+    }
+
+    .info_about {
+      left: 550px;
+      width: 240px;
+      height: 290px;
+    }
+
+    .help_about {
+      left: 830px;
+      width: 240px;
+      height: 290px;
+    }
+
+    .sub_about {
+      left: 1100px;
+      top: 80px;
+      height: 225px;
+
+    }
+
+    .foot_about1,
+    .contact_about1,
+    .info_about1,
+    .help_about1,
+    .sub_about1 {
+      font-size: 30px;
+      color: white;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    .s1:hover,
+    .s2:hover,
+    .s3:hover,
+    .s4:hover,
+    .s5:hover,
+    .s6:hover,
+    .s7:hover,
+    .s8:hover,
+    .s9:hover,
+    .s10:hover,
+    .s11:hover {
+      cursor: pointer;
+      color: rgb(20, 30, 170);
+      text-decoration: underline;
+    }
+
+    .subscribe {
+      display: block;
+      position: relative;
+      top: 19px;
+      width: 314px;
+      height: 45px;
+      border-radius: 5px;
+      padding: 15px;
+      font-size: 16px;
+    }
+
+    .submit2 {
+      display: block;
+      position: relative;
+      top: 35px;
+      width: 100px;
+      height: 35px;
+      font-size: 16px;
+      border-radius: 5px;
+      background-color: rgb(238, 238, 238);
+    }
+
+    .submit2:hover {
+      cursor: pointer;
+      background-color: rgb(166, 166, 166);
+    }
+
+    .hr {
+      position: relative;
+      top: 370px;
+
+    }
+
+    .linked,
+    .github,
+    .codeforce {
+      border: 2px solid black;
+      position: absolute;
+      width: 65px;
+      height: 65px;
+      top: 400px;
+      left: 630px;
+      border-radius: 50%;
+      background-color: rgb(231, 229, 229);
+
+
+    }
+
+    .github {
+      left: 720px;
+    }
+
+    .codeforce {
+      left: 810px;
+    }
+
+    .linked_img,
+    .github_img {
+      display: block;
+      width: 62px;
+      height: 62px;
+    }
+
+    .codeforce_img {
+      display: block;
+      width: 60px;
+      height: 50px;
+
+    }
+
+    .linked:hover,
+    .github:hover,
+    .codeforce:hover {
+      cursor: pointer;
+      transform: scale(1.07);
+      transition: transform 0.2s ease;
+      background-color: transparent;
+      box-shadow: 0 0 5px 3px white;
+    }
+
+    .copyright {
+      position: absolute;
+      width: 290px;
+      height: 50px;
+      color: white;
+      bottom: 0;
+      right: 0;
+
+    }
+
+    @media screen and (max-width: 1024px) {
+      nav {
+        flex-direction: column;
+        height: auto;
+        padding: 15px;
+        align-items: center;
+      }
+
+      .box1 {
+        font-size: 28px;
+        margin-bottom: 10px;
+      }
+
+      .box2 {
+        width: 100%;
+        max-width: 450px;
+        margin-bottom: 10px;
+      }
+
+      .box2_1, .box2_2, .box2_3, .box2_4 {
+        width: 90px;
+        height: 40px;
+      }
+
+      a {
+        font-size: 15px;
+      }
+
+      .main_box {
+        margin-top: 150px;
+      }
+
+      .container {
+        width: 90%;
+        max-width: 500px;
+      }
+
+      .pic {
+        width: 160px;
+        height: 160px;
+        background-size: 160px;
+      }
+
+      .hello {
+        font-size: 26px;
+        top: 230px;
+      }
+
+      .love {
+        font-size: 36px;
+        width: 300px;
+      }
+
+      .intro {
+        width: 90%;
+        font-size: 13px;
+      }
+
+      .intro_button {
+        width: 90%;
+        font-size: 12px;
+      }
+
+      .about {
+        height: auto;
+        min-height: 100vh;
+        padding: 50px 20px;
+      }
+
+      .picture-wrapper {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 450px;
+        width: 320px;
+        height: 420px;
+      }
+
+      .picture {
+        width: 310px;
+        height: 410px;
+      }
+
+      .aboutme {
+        left: 50%;
+        transform: translateX(-50%);
+        top: 30px;
+      }
+
+      .about_intro {
+        left: 50%;
+        transform: translateX(-50%);
+        top: 110px;
+        width: 90%;
+        max-width: 500px;
+        font-size: 16px;
+        text-align: center;
+      }
+
+      .skills {
+        left: 50%;
+        transform: translateX(-50%);
+        top: 360px;
+      }
+
+      .skill_1, .skill_2, .skill_3, .skill_4, .skill_5 {
+        left: 50%;
+        transform: translateX(-50%);
+        top: 900px;
+        text-align: center;
+        width: 100px;
+      }
+
+      .skill_2 { top: 940px; }
+      .skill_3 { top: 980px; }
+      .skill_4 { top: 1020px; }
+      .skill_5 { top: 1060px; }
+
+      .projects {
+        height: auto;
+        min-height: 100vh;
+        padding: 50px 20px;
+      }
+
+      .projecthead {
+        left: 50%;
+        transform: translateX(-50%);
+        top: 30px;
+      }
+
+      .project_container {
+        position: relative;
+        top: 100px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        max-width: 700px;
+        height: auto;
+      }
+
+      .project_1, .project_2, .project_3 {
+        left: 0;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        margin-bottom: 30px;
+      }
+
+      .project_1vid, .project_2vid, .project_3vid {
+        width: 100%;
+      }
+
+      .project_1vid video, .project_2vid video, .project_3vid video {
+        width: 100%;
+        height: auto;
+      }
+
+      .project_1cont, .project_2cont, .project_3cont {
+        width: 100%;
+        font-size: 16px;
+      }
+
+      .pinterest, .hover_clock, .solar {
+        font-size: 28px;
+      }
+
+      .achievements {
+        height: auto;
+        min-height: 100vh;
+        padding: 50px 20px;
+      }
+
+      .achieve {
+        left: 50%;
+        transform: translateX(-50%);
+        top: 30px;
+      }
+
+      .achieve_box1, .achieve_box2 {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        max-width: 700px;
+        height: auto;
+        flex-direction: column;
+        top: 100px;
+      }
+
+      .achieve_box2 {
+        top: 120px;
+      }
+
+      .principal, .complete {
+        position: relative;
+        width: 100%;
+        height: 250px;
+      }
+
+      .achieve_cont1, .achieve_cont2 {
+        position: relative;
+        left: 0;
+        width: 100%;
+        font-size: 16px;
+        padding: 20px;
+      }
+
+      .footer_container {
+        height: auto;
+        padding: 40px 20px 120px;
+      }
+
+      .foot_about, .contact_about, .info_about, .help_about, .sub_about {
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 100%;
+        margin-bottom: 30px;
+      }
+
+      .linked, .github, .codeforce {
+        left: 50%;
+        transform: translateX(-50%);
+        top: auto;
+        position: relative;
+        display: inline-block;
+        margin: 10px;
+      }
+
+      .github {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      .codeforce {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      .copyright {
+        position: relative;
+        text-align: center;
+        width: 100%;
+        margin-top: 30px;
+      }
+
+      .hr {
+        top: 20px;
+      }
+    }
+
+    @media screen and (max-width: 767px) {
+      nav {
+        height: auto;
+        padding: 10px;
+      }
+
+      .box1 {
+        font-size: 24px;
+      }
+
+      .box2 {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+      }
+
+      .box2_1, .box2_2, .box2_3, .box2_4 {
+        width: 80px;
+        height: 35px;
+      }
+
+      a {
+        font-size: 13px;
+      }
+
+      .box3 {
+        width: 120px;
+        height: 40px;
+      }
+
+      .main_box {
+        margin-top: 180px;
+      }
+
+      .container {
+        width: 95%;
+        padding: 20px;
+      }
+
+      .pic {
+        width: 140px;
+        height: 140px;
+        background-size: 140px;
+        top: 30px;
+      }
+
+      .hello {
+        font-size: 22px;
+        top: 190px;
+        width: 180px;
+      }
+
+      .love {
+        font-size: 28px;
+        width: 280px;
+        top: 270px;
+      }
+
+      .intro {
+        width: 95%;
+        font-size: 12px;
+        top: 280px;
+      }
+
+      .intro_button {
+        width: 95%;
+        font-size: 11px;
+        top: 230px;
+      }
+
+      .button1 {
+        width: 90px;
+        height: 32px;
+        font-size: 14px;
+        top: 220px;
+        right: 50px;
+      }
+
+      .button2 {
+        width: 140px;
+        height: 32px;
+        font-size: 14px;
+        top: 188px;
+        left: 40px;
+      }
+
+      .about {
+        padding: 30px 15px;
+      }
+
+      .picture-wrapper {
+        width: 280px;
+        height: 360px;
+        top: 400px;
+      }
+
+      .picture {
+        width: 270px;
+        height: 350px;
+      }
+
+      .aboutme {
+        font-size: 32px;
+        width: 200px;
+        top: 20px;
+      }
+
+      .about_intro {
+        width: 95%;
+        font-size: 14px;
+        line-height: 24px;
+        top: 90px;
+      }
+
+      .skills {
+        font-size: 32px;
+        width: 200px;
+        top: 310px;
+      }
+
+      .skill_1, .skill_2, .skill_3, .skill_4, .skill_5 {
+        font-size: 18px;
+        top: 800px;
+        width: 120px;
+      }
+
+      .skill_2 { top: 835px; }
+      .skill_3 { top: 870px; }
+      .skill_4 { top: 905px; }
+      .skill_5 { top: 940px; }
+
+     
+      .projects {
+        padding: 30px 15px;
+      }
+
+      .projecthead {
+        font-size: 32px;
+        width: 200px;
+        top: 20px;
+      }
+
+      .project_container {
+        width: 95%;
+        top: 80px;
+      }
+
+      .project_1, .project_2, .project_3 {
+        padding: 15px;
+      }
+
+      .project_1cont, .project_2cont, .project_3cont {
+        font-size: 14px;
+        line-height: 24px;
+        padding: 10px;
+      }
+
+      .pinterest, .hover_clock, .solar {
+        font-size: 24px;
+      }
+
+      
+      .achievements {
+        padding: 30px 15px;
+      }
+
+      .achieve {
+        font-size: 32px;
+        width: 250px;
+        top: 20px;
+      }
+
+      .achieve_box1, .achieve_box2 {
+        width: 95%;
+        top: 90px;
+        padding: 15px;
+      }
+
+      .achieve_box2 {
+        top: 110px;
+      }
+
+      .principal, .complete {
+        height: 200px;
+      }
+
+      .achieve_cont1, .achieve_cont2 {
+        font-size: 14px;
+        line-height: 24px;
+        padding: 15px;
+      }
+
+      .aca {
+        font-size: 22px;
+      }
+
+      .footer_container {
+        padding: 30px 15px 100px;
+      }
+
+      .foot_about, .contact_about, .info_about, .help_about, .sub_about {
+        font-size: 16px;
+        padding: 10px;
+      }
+
+      .foot_about1, .contact_about1, .info_about1, .help_about1, .sub_about1 {
+        font-size: 24px;
+      }
+
+      .subscribe {
+        width: 100%;
+        max-width: 280px;
+      }
+
+      .submit2 {
+        width: 90px;
+        height: 32px;
+        font-size: 14px;
+      }
+
+      .linked, .github, .codeforce {
+        width: 55px;
+        height: 55px;
+        margin: 5px;
+      }
+
+      .linked_img, .github_img {
+        width: 52px;
+        height: 52px;
+      }
+
+      .codeforce_img {
+        width: 50px;
+        height: 42px;
+      }
+
+      .copyright {
+        font-size: 14px;
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+      }
+    }
+    @media screen and (max-width: 480px) {
+      .box1 {
+        font-size: 20px;
+      }
+
+      .box2 {
+        gap: 3px;
+      }
+
+      .box2_1, .box2_2, .box2_3, .box2_4 {
+        width: 70px;
+        height: 32px;
+      }
+
+      a {
+        font-size: 12px;
+      }
+
+      .box3 {
+        width: 100px;
+        height: 35px;
+      }
+
+      .pic {
+        width: 120px;
+        height: 120px;
+        background-size: 120px;
+      }
+
+      .hello {
+        font-size: 20px;
+        width: 160px;
+        top: 170px;
+      }
+
+      .love {
+        font-size: 24px;
+        width: 240px;
+        top: 250px;
+      }
+
+      .intro {
+        font-size: 11px;
+        line-height: 18px;
+        top: 260px;
+      }
+
+      .intro_button {
+        font-size: 10px;
+        top: 215px;
+      }
+
+      .button1 {
+        width: 80px;
+        height: 30px;
+        font-size: 13px;
+        top: 205px;
+        right: 40px;
+      }
+
+      .button2 {
+        width: 130px;
+        height: 30px;
+        font-size: 13px;
+        top: 175px;
+        left: 30px;
+      }
+
+      .aboutme, .skills, .projecthead, .achieve {
+        font-size: 28px;
+        width: 180px;
+      }
+
+      .about_intro {
+        font-size: 13px;
+        line-height: 22px;
+      }
+
+      .picture-wrapper {
+        width: 240px;
+        height: 320px;
+      }
+
+      .picture {
+        width: 230px;
+        height: 310px;
+      }
+
+      .project_1cont, .project_2cont, .project_3cont {
+        font-size: 13px;
+        line-height: 22px;
+      }
+
+      .pinterest, .hover_clock, .solar {
+        font-size: 22px;
+      }
+
+      .achieve_cont1, .achieve_cont2 {
+        font-size: 13px;
+        line-height: 22px;
+      }
+
+      .aca {
+        font-size: 20px;
+      }
+
+      .foot_about1, .contact_about1, .info_about1, .help_about1, .sub_about1 {
+        font-size: 20px;
+      }
+
+      .linked, .github, .codeforce {
+        width: 50px;
+        height: 50px;
+      }
+
+      .linked_img, .github_img {
+        width: 47px;
+        height: 47px;
+      }
+
+      .codeforce_img {
+        width: 45px;
+        height: 38px;
+      }
+    }
